@@ -1,6 +1,6 @@
 Meteor Webstorm Library
 =======================
-Although Webstorm have [announced Meteor support in v9](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+9), they previously [announced it for v8](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+8) but didn't do it. I'm sure they have their reasons but until then, this will hopefully help a little.
+Although Webstorm have [announced Meteor support in v9](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+9), they previously [announced it for v8](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+8) but didn't do it. I'm sure they have their reasons but until then, this will hopefully help a little. We'll continue to support this until official support comes out.
 
 Other IDE's may work too as the library is simply a stub with JSDoc documentation.
 
