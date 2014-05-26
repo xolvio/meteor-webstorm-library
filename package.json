@@ -1,0 +1,12 @@
+{
+  "name": "meteor-webstorm",
+  "description": "Converts the meteor api docs into a webstorm library",
+  "author": "Sam Hatoum <sam@xolv.io>",
+  "dependencies": {
+    "request": "",
+    "lodash": ""
+  },
+  "devDependencies": {
+  },
+  "engine": "node >= 0.10.21"
+}
