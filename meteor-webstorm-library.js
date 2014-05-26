@@ -695,6 +695,41 @@ Meteor.clearTimeout = function(id) {};
 Meteor.clearInterval = function(id) {};
 
 /** 
+ * Return the current value of an EnvironmentVariable.
+ *
+ * Runs Anywhere
+ *
+ * @method get
+ *
+ */
+Meteor.get = function() {};
+
+/** 
+ * Run `func` with the `env_var`'s value set to `value`.
+ *
+ * Runs Anywhere
+ *
+ * @method withValue
+ *
+ * @param {Anything} value Desired value of the environment variable.
+ * @param {Function} func Function to call
+ */
+Meteor.withValue = function(value, func) {};
+
+/** 
+ * Return a new function that calls `func` with `this` set to `_this`, and with environment variables set to their current values.
+ *
+ * Runs Anywhere
+ *
+ * @method bindEnvironment
+ *
+ * @param {Function} func Function to wrap
+ * @param {Function} onException Function to call if `func` throws an exception.  It expects the thrown exception as its single argument.
+ * @param {Object} _this Value of `this` inside `func`.
+ */
+Meteor.bindEnvironment = function(func, onException, _this) {};
+
+/** 
  * Set a variable in the session. Notify any listeners that the value has changed (eg: redraw templates, and rerun any [`Deps.autorun`](#deps_autorun) computations, that called [`Session.get`](#session_get) on this `key`.)
  *
  * Runs on Client
