@@ -1,9 +1,8 @@
 Meteor Webstorm Library
 =======================
+Although Webstorm have [announced Meteor support in v9](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+9), they previously [announced it for v8](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+8) but didn't do it. I'm sure they have their reasons but until then, this will hopefully help a little. We'll continue to support this until official support comes out.
 
-A converter that takes the [api.json](https://github.com/meteor/meteor/blob/devel/docs/client/api.js) that powers the [Meteor docs site](docs.meteor.com) and converts it into a stub with jsdocs around, for Webstorm to use as a library  ([Inspired by this post](http://youtrack.jetbrains.com/issue/WEB-6264#comment=27-615870)).
-
-Although Webstorm have [announced Meteor support in v9](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+9), they previously [announced it for v8](http://confluence.jetbrains.com/display/WI/Roadmap+for+WebStorm+8) but didn't do it. I'm sure they have their reasons but until then, this will hopefully help a little.
+Other IDE's may work too as the library is simply a stub with JSDoc documentation.
 
 What does it do?
 ----------------
@@ -21,8 +20,13 @@ Installation Instructions:
 * Click on "Add" and load the file you just downloaded
 * Enjoy!
 
+
+How did we do it?
+-----------------
+We wrote a converter that takes the [api.json](https://github.com/meteor/meteor/blob/devel/docs/client/api.js), which powers the [Meteor docs site](docs.meteor.com), and converts it into a stub with jsdocs ([Inspired by this post](http://youtrack.jetbrains.com/issue/WEB-6264#comment=27-615870)).
+
 Done / Remaining:
---------------------------
+-----------------
 Methods converted so far:
 * Static methods like `Meteor.isServer`. These are the easiest and there are 
 79 of them.
