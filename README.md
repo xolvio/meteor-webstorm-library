@@ -15,9 +15,8 @@ And if you click-through to the method declaration you'll get this:
 
 Installation Instructions:
 --------------------------
-* Download [the meteor-webstorm-library.js file](https://raw.githubusercontent.com/xolvio/meteor-webstorm/master/meteor-webstorm-library.js) and place it somewhere like your home directory.
 * Open Webstorm preferences and go to Javascript > Libraries
-* Click on "Add" and load the file you just downloaded
+* Click on "Add" and then click on "Specify" and paste in this url: https://raw.githubusercontent.com/xolvio/meteor-webstorm/master/meteor-webstorm-library.js
 * Enjoy!
 
 
